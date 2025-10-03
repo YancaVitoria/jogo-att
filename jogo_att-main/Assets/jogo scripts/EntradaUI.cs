@@ -2,14 +2,22 @@ using UnityEngine;
 
 public class EntradaUI : MonoBehaviour
 {
-    public void SelectThemeAndPlay(ThemeSO theme)
+    public void OnPlayButtonPressed(int index)
+    {
+        // Acessa a instpï¿½ncia ï¿½nica do SceneLoader e chama a funï¿½ï¿½o
+        SceneLoader.instance.LoadGameScene(index);
+        print("Play button pressed - Loading game scene");
+    
+    }
+
+    public void SelectThemeAndPlay()
     {
         // Guarda o tema escolhido no nosso GameManager persistente
-        GameManager.instance.selectedTheme = theme;
+        //GameManager.instance.selectedTheme = nivel;
 
         // Carrega a cena principal do jogo (que vamos usar a "tema1" como modelo)
-        // No futuro, você pode ter várias cenas de gameplay, mas por enquanto isso funciona.
-        SceneLoader.instance.LoadNextThemeScene(); // Supondo que "tema1" é a cena de gameplay
+        // No futuro, vocï¿½ pode ter vï¿½rias cenas de gameplay, mas por enquanto isso funciona.
+        SceneLoader.instance.LoadNextThemeScene(); // Supondo que "tema1" ï¿½ a cena de gameplay
     }
 
     public void OnVoltarButtonPressed()

@@ -3,7 +3,7 @@ using UnityEngine.SceneManagement;
 
 public class SceneLoader : MonoBehaviour
 {
-    // Usaremos o mesmo padrão Singleton para que seja fácil de acessar
+    // Usaremos o mesmo padrï¿½o Singleton para que seja fï¿½cil de acessar
     public static SceneLoader instance;
 
     private void Awake()
@@ -19,26 +19,26 @@ public class SceneLoader : MonoBehaviour
         }
     }
 
-    // Adicione esta função para carregar o menu assim que o jogo começar
+    // Adicione esta funï¿½ï¿½o para carregar o menu assim que o jogo comeï¿½ar
     private void Start()
     {
-        // Verifica se estamos na cena Initializer para não carregar o menu duas vezes
+        // Verifica se estamos na cena Initializer para nï¿½o carregar o menu duas vezes
         if (SceneManager.GetActiveScene().name == "Initializer")
         {
             LoadMainMenuScene();
         }
     }
 
-    // --- Funções Públicas para os Botões Chamarem ---
+    // --- Funï¿½ï¿½es Pï¿½blicas para os Botï¿½es Chamarem ---
 
     public void LoadMainMenuScene()
     {
         SceneManager.LoadScene("titulo");
     }
 
-    public void LoadGameScene()
+    public void LoadGameScene(int index)
     {
-        SceneManager.LoadScene("entrada");
+        SceneManager.LoadScene(index);
     }
 
     public void LoadNextThemeScene()

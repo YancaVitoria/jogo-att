@@ -2,10 +2,12 @@ using UnityEngine;
 
 public class MainMenuUI : MonoBehaviour
 {
-    public void OnPlayButtonPressed()
+    public void OnPlayButtonPressed(int index)
     {
-        // Acessa a instância única do SceneLoader e chama a função
-        SceneLoader.instance.LoadGameScene();
+        // Acessa a instpï¿½ncia ï¿½nica do SceneLoader e chama a funï¿½ï¿½o
+        SceneLoader.instance.LoadGameScene(index);
+        print("Play button pressed - Loading game scene");
+    
     }
 
     public void OnQuitButtonPressed()

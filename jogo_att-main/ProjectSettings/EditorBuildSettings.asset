@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 1
+  - enabled: 0
     path: Assets/cenas/Initializer.unity
     guid: 7fd65b2b0065bbc4eaaf2fcaa6b9d782
   - enabled: 1

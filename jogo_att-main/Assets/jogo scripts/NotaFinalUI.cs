@@ -3,9 +3,9 @@ using TMPro;
 
 public class NotaFinalUI : MonoBehaviour
 {
-    [Header("Referências de UI")]
-    public TextMeshProUGUI scoreText; // O texto grande da pontuação (ex: "40")
-    public TextMeshProUGUI summaryText; // O texto de resumo (ex: "Você acertou 4 de 5...")
+    [Header("Referï¿½ncias de UI")]
+    public TextMeshProUGUI scoreText; // O texto grande da pontuaï¿½ï¿½o (ex: "40")
+    public TextMeshProUGUI summaryText; // O texto de resumo (ex: "Vocï¿½ acertou 4 de 5...")
     public GameObject[] stars; // Um array para as 3 estrelas
 
     void Start()
@@ -17,9 +17,9 @@ public class NotaFinalUI : MonoBehaviour
 
         // Atualiza os textos na tela
         scoreText.text = score.ToString();
-        summaryText.text = $"Você acertou {correct} de {total} perguntas";
+        summaryText.text = $"Vocï¿½ acertou {correct} de {total} perguntas";
 
-        // Lógica para mostrar as estrelas
+        // Lï¿½gica para mostrar as estrelas
         UpdateStars(correct, total);
     }
 
@@ -52,23 +52,23 @@ public class NotaFinalUI : MonoBehaviour
         }
     }
 
-    // --- FUNÇÕES DOS BOTÕES ---
-    // Função para o botão "Jogar de Novo"
+    // --- FUNï¿½ï¿½ES DOS BOTï¿½ES ---
+    // Funï¿½ï¿½o para o botï¿½o "Jogar de Novo"
     public void OnReplayButtonPressed()
     {
-        // O GameManager ainda tem o último tema selecionado guardado.
+        // O GameManager ainda tem o ï¿½ltimo tema selecionado guardado.
         // Apenas precisamos carregar a cena de gameplay novamente!
         SceneLoader.instance.LoadNextThemeScene();
     }
 
-    // Função para o botão "Temas"
+    // Funï¿½ï¿½o para o botï¿½o "Temas"
     public void OnThemesButtonPressed()
     {
-        // Carrega a cena de seleção de temas (a cena "entrada")
-        SceneLoader.instance.LoadGameScene();
+        // Carrega a cena de seleï¿½ï¿½o de temas (a cena "entrada")
+        //SceneLoader.instance.LoadGameScene();
     }
 
-    // Função para o botão "Início" (Home)
+    // Funï¿½ï¿½o para o botï¿½o "Inï¿½cio" (Home)
     public void OnHomeButtonPressed()
     {
         // Carrega a cena do menu principal
