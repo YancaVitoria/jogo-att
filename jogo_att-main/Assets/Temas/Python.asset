@@ -1,0 +1,54 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 91e335410b5196f449d8d582561a2671, type: 3}
+  m_Name: Python
+  m_EditorClassIdentifier: 
+  themeName: Python para iniciantes
+  questions:
+  - questionText: "Qual \xE9 a palavra-chave usada em Python para definir uma fun\xE7\xE3o?"
+    answers:
+    - function
+    - def
+    - fun
+    - public
+    correctAnswerIndex: 1
+  - questionText: "Qual dos seguintes tipos de dados \xE9 usado para armazenar uma
+      cole\xE7\xE3o ordenada e imut\xE1vel de elementos em Python?"
+    answers:
+    - list
+    - dict
+    - set
+    - tuple
+    correctAnswerIndex: 3
+  - questionText: "Como se escreve um coment\xE1rio de uma \xFAnica linha em Python?"
+    answers:
+    - "// Este \xE9 um coment\xE1rio"
+    - "/* Este \xE9 um coment\xE1rio */"
+    - "# Este \xE9 um coment\xE1rio"
+    - "``Este \xE9 um coment\xE1rio"
+    correctAnswerIndex: 2
+  - questionText: "Qual m\xE9todo \xE9 usado para adicionar um item ao final de uma
+      lista (list) em Python?  "
+    answers:
+    - .add()
+    - '.push()  '
+    - .append()
+    - .insert()
+    correctAnswerIndex: 2
+  - questionText: "Qual \xE9 a fun\xE7\xE3o usada para obter o n\xFAmero de elementos
+      em uma lista ou string?"
+    answers:
+    - size()
+    - length()
+    - count()
+    - len()
+    correctAnswerIndex: 3
